@@ -1,0 +1,19 @@
+# kubectl apply -f simple-pod.yml
+# kubectl get pods
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    name: dev
+    version: v1
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
