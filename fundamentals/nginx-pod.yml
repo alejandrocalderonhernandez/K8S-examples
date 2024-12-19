@@ -1,5 +1,6 @@
 # kubectl apply -f simple-pod.yml
 # kubectl get pods
+# kubectl port-forward pod/nginx 8080:80
 apiVersion: v1
 kind: Pod
 metadata:

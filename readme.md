@@ -23,5 +23,3 @@ restert cluster:
 docker ps -a -q --filter "name=kind-" | xargs docker start
 delete:
 kind delete cluster
-
-
